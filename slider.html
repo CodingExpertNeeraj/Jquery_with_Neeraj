@@ -8,6 +8,7 @@
     <style>
         #panel, #flip {
   padding: 5px;
+  margin-top: 10%;
   text-align: center;
   background-color: purple;
   border: solid 1px #c3c3c3;
@@ -16,19 +17,27 @@
 }
 
 #panel {
-  padding: 50px;
+  padding: 5px;
   display: none;
 }
     </style>
 </head>
 <body>
+
+    <!-- Jquery has three method
+    slideDown()
+    slideUp()
+    slideToggle() -->
+
     <div id="flip">Click to slide down panel</div>
 <div id="panel">Hello My name is Neeraj</div>
 
     <script>
         $(document).ready(function(){
   $("#flip").click(function(){
-    $("#panel").slideDown("slow");
+    // $("#panel").slideToggle("slow");
+    // $("#panel").slideDown("slow");
+    $("#panel").slideUp("slow");
   });
 });
     </script>
