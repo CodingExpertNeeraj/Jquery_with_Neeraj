@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   #myDiv{
+        padding: 50px;
+        text-align: center;
+        border: 2px solid blue;
+        background-color: aquamarine;
+        margin-top: 100px;
+    }
+</style>
+<body>
+    <button>click me to show magic</button>
+    <div id="myDiv">
+        good morning guys
+    </div>
+    <script src="jquery-3.6.3.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $('#myDiv').toggle(2000)
+            })
+        })
+    </script>
+</body>
+</html>
